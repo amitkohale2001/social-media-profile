@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background:#ECF0F3;
+}
+.photo,
+.photo .img,
+.social-icon a,
+.button button{
+    border-radius: 10px;
+    background: #ECF0F3;
+    box-shadow: -3px -3px 7px #ffffff,
+                 3px 3px 5px #ceced1;
+
+}
+.photo{
+    padding:  30px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background: #ECF0F3;
+    box-shadow: -3px -3px 7px #ffffff,
+                 3px 3px 5px #ceced1;
+}
+.photo .img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img .inner-area{
+    height: calc(100% - 25px);
+    width: calc(100% - 25px);
+    border-radius: 50%;
+
+}
+.inner-area img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.photo .name{
+    font-size: 23px;
+    font-weight: 500;
+    color: #31344B;
+    margin: 10px 0 5px 0;
+}
+.photo .info{
+    font-size: 16px;
+    font-weight: 400;
+    color: #31344B;
+}
+.photo .social-icon{
+    margin: 15px 0 25px 0;
+}
+.social-icon a{
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 50%;
+    position: relative;
+}
+.social-icon a:hover::before,
+.button button:hover::before,
+.photo .icon:hover::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    background: #ECF0F3;
+    box-shadow:inset -3px -3px 7px #ffffff,
+                inset 3px 3px 5px #ceced1;
+}
+.button button:hover::before{
+    border-radius: 5px;
+     z-index: -1; 
+}
+.social-icon a i{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    position: relative;
+    z-index: 5;
+}
+.social-icon a.fb i{
+    color:#4267B2 ;
+}
+.social-icon a.twitter i{
+    color: #1DA1F2;
+}
+.social-icon a.insta i{
+    color: #E23074;
+}
+.social-icon a.yt i{
+    color: #FF0000;
+}
+.photo .button{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.button button{
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 12px 0 ;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #31344B;
+    z-index: 4;
+
+}
+.button button:first-child{
+    margin-right:  10px;
+}
+.button button:last-child{
+    margin-left: 10px;
+}
+.photo .social-share{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 5px;
+    justify-content: space-between;
+}
+.social-share .row{
+    color: #31344B;
+    font-size: 17px;
+    cursor: pointer;
+    position: relative;
+
+}
+.social-share .row::before{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: #ECF0F3;
+    margin-left: -25px;
+}
+.row:first-child::before{
+    background: none;
+}
+.photo .icon.arrow{
+    left: 25px;
+}
+.photo .icon.dot{
+    right: 15px;
+}
+.photo .icon i{
+    position: relative;
+    z-index: 5;
+}
+
